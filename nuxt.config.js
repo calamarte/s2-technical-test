@@ -2,23 +2,33 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
+  server: {
+    host: '0' // default: localhost
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 's2-technical-test',
+    title: 'we-are-marketing',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'author', content: 'Jose Navarro Garbayo' },
+      { name: 'keywords', content: 'HTML,CSS,JavaScript,Vue,SASS,JEST,Entelgy' },
+      { hid: 'description', name: 'description', content: 'Prueba técnica para S2' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ]
   },
 
+
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    '~/assets/styles/main.css'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
